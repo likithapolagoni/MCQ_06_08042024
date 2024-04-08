@@ -1,0 +1,87 @@
+1) Which of the following option leads to the portability and security of Java?
+A)Bytecode is executed by JVM
+B)The applet makes the Java code secure and portable
+C)Use of exception handling
+D)Dynamic binding between objects
+
+Answer: A
+
+2) Which of the following is not a Java features?
+A)Dynamic
+B)Architecture Neutral
+C)Use of pointers
+D)Object-oriented
+
+Answer: (c) Use of pointers
+
+
+3) What should be the execution order, if a class has a method, static block, instance block, and constructor, as shown below?
+
+public class First_C {  
+      public void myMethod()   
+    {  
+    System.out.println("Method");  
+    }  
+      
+    {  
+    System.out.println(" Instance Block");  
+    }  
+          
+    public void First_C()  
+    {  
+    System.out.println("Constructor ");  
+    }  
+    static {  
+        System.out.println("static block");  
+    }  
+    public static void main(String[] args) {  
+    First_C c = new First_C();  
+    c.First_C();  
+    c.myMethod();  
+  }  
+}   
+A)Instance block, method, static block, and constructor
+B)Method, constructor, instance block, and static block
+C)Static block, method, instance block, and constructor
+D)Static block, instance block, constructor, and method
+
+Answer: (d) Static block, instance block, constructor, and method
+
+4) What will be the output of the following program?
+
+public class MyFirst {  
+      public static void main(String[] args) {  
+         MyFirst obj = new MyFirst(n);  
+ }  
+ static int a = 10;  
+ static int n;  
+ int b = 5;  
+ int c;  
+ public MyFirst(int m) {  
+       System.out.println(a + ", " + b + ", " + c + ", " + n + ", " + m);  
+   }  
+// Instance Block  
+  {  
+     b = 30;  
+     n = 20;  
+  }   
+// Static Block  
+  static   
+{  
+          a = 60;  
+     }   
+ }  
+A)10, 5, 0, 20, 0
+B)10, 30, 20
+C)60, 5, 0, 20
+D)60, 30, 0, 20, 0
+Answer:(d) 60, 30, 0, 20, 0
+
+5) The \u0021 article referred to as a
+
+A)Unicode escape sequence
+B)Octal escape
+C)Hexadecimal
+D)Line feed
+Answer:(a) Unicode escape sequence
+Line feed
